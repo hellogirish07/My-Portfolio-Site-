@@ -1,11 +1,11 @@
 @media only screen and (max-width: 1140px) {
 
-    .background{
-        background: url('Pic/NeW\ BG\ .jpg');
+    .background {
+        background: url('Pic/Bg2\ -\ Copy.jpg');
         background-size: cover;
         background-blend-mode: darken;
     }
-    
+
     .nav-list {
         flex-direction: column;
         text-align: center;
@@ -31,6 +31,10 @@
         display: block;
     }
 
+    .line {
+        background-color: #fff;
+    }
+
     .h-nav-resp {
         height: 72px;
     }
@@ -38,6 +42,17 @@
     .v-class-resp {
         opacity: 0;
     }
+
+    .secondhalf {
+        width: 200px;
+        height: 200px;
+
+    }
+
+    /* .secondhalf img {
+        width: 200px;
+        height: 200px;
+    } */
 
     .section {
         flex-direction: column-reverse;
@@ -136,18 +151,22 @@
         padding-bottom: 5px;
     }
 
-    .icons > a > i {
+    .icons>a>i {
         font-size: 2rem;
     }
 
     .btn {
         display: block;
-        margin: auto;
+        margin: 15px;
     }
 
     form {
         max-width: 75%;
     }
+
+    /* button [type="submit"] {
+        margin: 5px;
+    } */
 }
 
 /* @media only screen and (min-width: 1140px) {
