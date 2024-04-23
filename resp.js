@@ -11,14 +11,25 @@ burger.addEventListener('click', ()=>{
 
 // Get the button element
 const themeButton = document.getElementById("themeButton");
+const themeIcon = document.getElementById("themeIcon");
 
-// Add a click event listener to the button
 themeButton.addEventListener("click", function () {
     // Toggle the class "white" on the button
     themeButton.classList.toggle("white");
 
     // Toggle the class "black" on the body
     document.body.classList.toggle("black");
+
+    // Toggle moon and sun icons based on body class
+    if (document.body.classList.contains("black")) {
+        // If body is black, show sun icon
+        themeIcon.classList.remove("fa-moon");
+        themeIcon.classList.add("fa-sun");
+    } else {
+        // If body is not black, show moon icon
+        themeIcon.classList.remove("fa-sun");
+        themeIcon.classList.add("fa-moon");
+    }
 });
 
 // Google sheet 
